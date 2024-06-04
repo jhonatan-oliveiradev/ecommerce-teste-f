@@ -32,6 +32,7 @@ const CartPage = () => {
             <PlusIcon />
           </Button>
         </div>
+        <strong>Sub</strong>
       </div>
     </section>
   );

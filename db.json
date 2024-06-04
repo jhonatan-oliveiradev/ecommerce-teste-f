@@ -2,59 +2,73 @@
   "categories": [
     {
       "name": "Fones",
-      "slug": "fones"
+      "slug": "fones",
+      "id": 1
     },
     {
       "name": "Notebooks",
-      "slug": "notebooks"
+      "slug": "notebooks",
+      "id": 2
     },
     {
       "name": "Teclados",
-      "slug": "teclados"
+      "slug": "teclados",
+      "id": 3
     },
     {
       "name": "Monitores",
-      "slug": "monitores"
+      "slug": "monitores",
+      "id": 4
     },
     {
       "name": "Áudio",
-      "slug": "audio"
+      "slug": "audio",
+      "id": 5
     },
     {
       "name": "Wearables",
-      "slug": "wearables"
+      "slug": "wearables",
+      "id": 6
     },
     {
       "name": "Câmeras",
-      "slug": "cameras"
+      "slug": "cameras",
+      "id": 7
     },
     {
       "name": "Consoles",
-      "slug": "consoles"
+      "slug": "consoles",
+      "id": 8
     },
     {
       "name": "Cadeiras",
-      "slug": "cadeiras"
+      "slug": "cadeiras",
+      "id": 9
     },
     {
       "name": "Smartphones",
-      "slug": "smartphones"
+      "slug": "smartphones",
+      "id": 10
     },
     {
       "name": "Televisores",
-      "slug": "televisores"
+      "slug": "televisores",
+      "id": 11
     },
     {
       "name": "Mouses",
-      "slug": "mouses"
+      "slug": "mouses",
+      "id": 12
     },
     {
       "name": "Impressoras",
-      "slug": "impressoras"
+      "slug": "impressoras",
+      "id": 13
     },
     {
       "name": "Tablets",
-      "slug": "tablets"
+      "slug": "tablets",
+      "id": 14
     }
   ],
   "products": [

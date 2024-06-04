@@ -1,4 +1,4 @@
-const apiUrl = process.env.PUBLIC_NEXT_LOCAL_API;
+const apiUrl = process.env.PUBLIC_NEXT_MOCK_API;
 
 export async function fetchCategories() {
   const response = await fetch(`${apiUrl}/products`);
