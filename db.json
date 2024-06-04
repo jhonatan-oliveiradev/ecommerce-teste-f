@@ -1,0 +1,242 @@
+{
+  "categories": [
+    {
+      "name": "Fones",
+      "slug": "fones"
+    },
+    {
+      "name": "Notebooks",
+      "slug": "notebooks"
+    },
+    {
+      "name": "Teclados",
+      "slug": "teclados"
+    },
+    {
+      "name": "Monitores",
+      "slug": "monitores"
+    },
+    {
+      "name": "Áudio",
+      "slug": "audio"
+    },
+    {
+      "name": "Wearables",
+      "slug": "wearables"
+    },
+    {
+      "name": "Câmeras",
+      "slug": "cameras"
+    },
+    {
+      "name": "Consoles",
+      "slug": "consoles"
+    },
+    {
+      "name": "Cadeiras",
+      "slug": "cadeiras"
+    },
+    {
+      "name": "Smartphones",
+      "slug": "smartphones"
+    },
+    {
+      "name": "Televisores",
+      "slug": "televisores"
+    },
+    {
+      "name": "Mouses",
+      "slug": "mouses"
+    },
+    {
+      "name": "Impressoras",
+      "slug": "impressoras"
+    },
+    {
+      "name": "Tablets",
+      "slug": "tablets"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Airpods Apple, com Estojo de Recarga, Bluetooth",
+      "description": "Airpods Apple, com Estojo de Recarga, Bluetooth, Branco\nO Novo AirPods traz uma experiência nova em usar fones de ouvido sem fio. É só tirá-los do estojo e estão prontos para uso com seu iPhone, Apple Watch, iPad ou Mac. Ele oferece cinco horas de som e três horas para conversar com apenas uma carga. Eles acompanham seu ritmo graças ao estojo que proporciona várias cargas adicionais para mais de 24 horas de uso.",
+      "price": 120,
+      "discountPrice": 150,
+      "cover": "https://i.imgur.com/uXrbyfA.jpg",
+      "category": "fones"
+    },
+    {
+      "id": 2,
+      "title": "Notebook Gamer Lenovo Gaming 3i Intel Core i5-11300H",
+      "description": "Lenovo ideapad Gaming 3i\nNovo design com 11ª Geração de Processadores Intel Core i5-11300H e placa de vídeo NVIDIA GeForce GTX 1650 4GB. Ideal para gamers e usuários que também precisam de alta performance. Com tela de 15.6'' Full HD WVA Antirreflexo para melhor definição de imagem e cores. O armanezamento SSD PCIe NVMe é 10x mais rápido* que um HDD 2.5” SATA, você terá mais segurança ao armazenar seus dados. O teclado retroiluminado em LED branco, deixa o computador mais atraente e também favorece a performance para jogos em lugares com pouca iluminação.",
+      "price": 3799.9,
+      "discountPrice": 3999.9,
+      "cover": "https://i.imgur.com/bM5IUKe.jpg",
+      "category": "notebooks"
+    },
+    {
+      "id": 3,
+      "title": "Teclado Mecânico Gamer HyperX Alloy",
+      "description": "Teclado HyperX Alloy MKW100, HKBM1-R-EUA/G - 4P5E1AA#ABA\nObtenha uma iluminação radiante e por tecla com efeitos dinâmicos para adicionar um toque de estilo ao seu setup de PC. Estrutura em alumínio durável\nCom uma estrutura de alumínio sólida, o Alloy MKW100 foi projetado para fornecer estabilidade quando os toques em teclas estiverem a todo vapor. O descanso para pulso removível ajuda a reduzir a fadiga de longas sessões de jogos ou de trabalho.",
+      "price": 199.99,
+      "discountPrice": 239.99,
+      "cover": "https://i.imgur.com/ldh1Q8O.jpg",
+      "category": "teclados"
+    },
+    {
+      "id": 4,
+      "title": "Monitor Gamer Husky Tempest 34",
+      "description": "O Monitor Gamer Husky Gaming Tempest LED 34 UltraWide Curvo traz a experiência de imersão completa para o seus jogos! A tela Curva UltraWide, formato 21:9, e Quad HD (QHD), com taxa de atualização de 144Hz, confere maior campo de visão e amplifica a experiência de imersão durante seus jogos.",
+      "price": 2099.99,
+      "discountPrice": 3199.99,
+      "cover": "https://i.imgur.com/sRmbcWW.jpeg",
+      "category": "monitores"
+    },
+    {
+      "id": 5,
+      "title": "Soundbar LG SNH5, 4.1 Canais, Bluetooth, 600W RMS",
+      "description": "O LG Sound Bar SNH5 uniu-se ao DTS Virtual:X para transformar sua casa em um verdadeiro cinema e deixar a exibição dos seus filmes favoritos muito mais imersiva. O LG Sound Bar SNH5 suporta saída para 4.1 canais para que você possa assistir à TV com um som mais envolvente.",
+      "price": 1099.99,
+      "discountPrice": 1299.99,
+      "cover": "https://i.imgur.com/w7SeQsa.jpg",
+      "category": "audio"
+    },
+    {
+      "id": 6,
+      "title": "Smartwatch Samsung Galaxy Watch 5, BT, 40mm",
+      "description": "O smartwatch que oferece o mais completo conjunto de funções de monitoramento para o acompanhamento da Saúde e do Bem-Estar de uma maneira precisa e confiável. Possui os recursos essenciais e mais avançados para medir e acompanhar o estado da sua Saúde, funções como monitor de Batimento Cardíaco, Pressão Arterial, Eletrocardiograma, Oxímetro, Detecção de Queda e Chamada de Emergência, programa de Coaching do Sono para monitorar e melhorar a qualidade do seu Sono , além da Bioimpedância para avaliar a composição corporal de maneira rápida e interativa, e verificar a evolução os resultados dos exercícios refletidos no seu corpo. Possui uma série de funções avançadas de treinos com mais de 95 modalidades. ",
+      "price": 1139,
+      "discountPrice": 1299,
+      "cover": "https://i.imgur.com/Ua4bURp.jpg",
+      "category": "wearables"
+    },
+    {
+      "id": 7,
+      "title": "Câmera Digital Canon EOS Rebel T7, Full HD",
+      "description": "A Câmera Digital Canon EOS Rebel T7 oferece recursos profissionais em um design compacto e fácil de usar. Possui um sensor CMOS de 24.1MP de alta resolução, processador de imagem DIGIC 4+, ISO de 100-6400 (expansível até 12800), sistema de autofoco de 9 pontos, disparo contínuo de até 3.0 fps e gravação de vídeo Full HD 1080p. Com a EOS Rebel T7, você pode capturar imagens incríveis e gravar vídeos de alta qualidade para compartilhar com seus amigos e familiares.",
+      "price": 749.99,
+      "discountPrice": 799.99,
+      "cover": "https://whcamera.com/media/catalog/product/cache/21311e9220240778d2ffa402d5ca5680/1/5/1550675172000_1461735_9.jpg",
+      "category": "cameras"
+    },
+    {
+      "id": 8,
+      "title": "Fone de Ouvido JBL Tune 500BT",
+      "description": "O JBL Tune 500BT é um fone de ouvido sem fio com som potente e graves profundos. Ele possui conectividade Bluetooth, bateria com autonomia de até 16 horas, controle de faixas e chamadas integrado e design dobrável para facilitar o transporte. Com o JBL Tune 500BT, você pode curtir suas músicas favoritas com qualidade e praticidade.",
+      "price": 199.9,
+      "discountPrice": 249.9,
+      "cover": "https://i2.wp.com/victoreletronicos.com.br/wp-content/uploads/2019/12/fone-de-ouvido-sem-fio-bluetooth-jbl-tune-500bt-nota-fiscal-D_NQ_NP_661081-MLB31087245618_062019-F.jpg?fit=700%2C698&ssl=1",
+      "category": "fones"
+    },
+    {
+      "id": 9,
+      "title": "Console Xbox Series X",
+      "description": "O Console Xbox Series X oferece uma experiência de jogo de última geração. Com poder de processamento superior, gráficos de alta qualidade e tempos de carregamento mais rápidos, você poderá desfrutar de jogos incríveis em resolução 4K. Além disso, o Xbox Series X possui suporte para tecnologias como Ray Tracing, HDR e Variable Refresh Rate, proporcionando uma imersão ainda maior nos jogos.",
+      "price": 4999.99,
+      "discountPrice": 5499.99,
+      "cover": "https://cdn.awsli.com.br/600x450/2443/2443989/produto/17305451693a62c546e.jpg",
+      "category": "consoles"
+    },
+    {
+      "id": 10,
+      "title": "Cadeira Gamer Alpha Gamer Vega",
+      "description": "A Cadeira Gamer Alpha Gamer Vega é a escolha perfeita para quem busca conforto e estilo durante as longas sessões de jogo. Possui estrutura resistente, revestimento em couro sintético de alta qualidade, ajuste de altura, encosto reclinável e apoio de braços acolchoado. Com a Cadeira Gamer Alpha Gamer Vega, você poderá jogar por horas sem desconforto.",
+      "price": 899.9,
+      "discountPrice": 999.9,
+      "cover": "https://images3.kabum.com.br/produtos/fotos/81473/81473_1476727007_g.jpg",
+      "category": "cadeiras"
+    },
+    {
+      "id": 11,
+      "title": "Notebook Gamer Acer Nitro 5 AN515-54-79YX",
+      "description": "O Notebook Gamer Acer Nitro 5 AN515-54-79YX é a escolha perfeita para quem busca um notebook gamer de alto desempenho. Possui processador Intel Core i7 de 9ª geração, placa de vídeo NVIDIA GeForce GTX 1650, 8GB de memória RAM, 512GB de armazenamento SSD e tela de 15.6” Full HD. Com o Notebook Gamer Acer Nitro 5 AN515-54-79YX, você poderá jogar seus jogos favoritos com qualidade e fluidez.",
+      "price": 4999.99,
+      "discountPrice": 5499.99,
+      "cover": "https://www.saldaodainformatica.com.br/6932/notebook-acer-nitro-5-an517-intel-core-i7-9750h-geforce-gtx-1650-ram-16gb-hd-1tb-ssd-256gb-tela-173-windows-10.jpg",
+      "category": "notebooks"
+    },
+    {
+      "id": 12,
+      "title": "Smartphone Samsung Galaxy S20 FE",
+      "description": "O Smartphone Samsung Galaxy S20 FE é a escolha perfeita para quem busca um smartphone de alto desempenho. Possui processador Exynos 990, 8GB de memória RAM, 128GB de armazenamento, tela de 6.5” Full HD+ e câmera traseira tripla de 12MP+12MP+8MP. Com o Smartphone Samsung Galaxy S20 FE, você poderá tirar fotos incríveis e jogar seus jogos favoritos com qualidade e fluidez.",
+      "price": 2999.99,
+      "discountPrice": 3499.99,
+      "cover": "https://m.media-amazon.com/images/I/51WBKyRex8L._AC_UF894,1000_QL80_.jpg",
+      "category": "smartphones"
+    },
+    {
+      "id": 13,
+      "title": "Smart TV LED 50” Samsung Crystal UHD 4K",
+      "description": "A Smart TV LED 50” Samsung Crystal UHD 4K oferece uma experiência de entretenimento completa. Possui resolução 4K, HDR, sistema operacional Tizen, conectividade Bluetooth e Wi-Fi, 3 entradas HDMI e 2 entradas USB. Com a Smart TV LED 50” Samsung Crystal UHD 4K, você poderá assistir seus filmes e séries favoritos com qualidade e praticidade.",
+      "price": 2999.99,
+      "discountPrice": 3499.99,
+      "cover": "https://gazin-marketplace.s3.amazonaws.com/midias/imagens/2020/12/smart-tv-samsung-led-50-4k-wi-fi-tizen-crystal-uhd-un50tu8000gxzd-142012331553.jpg",
+      "category": "televisores"
+    },
+    {
+      "id": 14,
+      "title": "Videogame Playstation 5 Com Leitor + God Of War: Ragnarok",
+      "description": "O Videogame Playstation 5 Com Leitor + God Of War: Ragnarok oferece uma experiência de jogo de última geração. Com poder de processamento superior, gráficos de alta qualidade e tempos de carregamento mais rápidos, você poderá desfrutar de jogos incríveis em resolução 4K. Além disso, o Playstation 5 possui suporte para tecnologias como Ray Tracing, HDR e Variable Refresh Rate, proporcionando uma imersão ainda maior nos jogos.",
+      "price": 5999.99,
+      "discountPrice": 6499.99,
+      "cover": "https://imperiallgames.com/wp-content/uploads/2023/01/Console-Playstation-5-God-of-war-Ragnarok-2.jpg",
+      "category": "consoles"
+    },
+    {
+      "id": 15,
+      "title": "Smartphone Xiaomi Redmi Note 10 Pro",
+      "description": "O Smartphone Xiaomi Redmi Note 10 Pro é a escolha perfeita para quem busca um smartphone de alto desempenho. Possui processador Qualcomm Snapdragon 732G, 6GB de memória RAM, 128GB de armazenamento, tela de 6.67” Full HD+ e câmera traseira quádrupla de 108MP+8MP+5MP+2MP. Com o Smartphone Xiaomi Redmi Note 10 Pro, você poderá tirar fotos incríveis e jogar seus jogos favoritos com qualidade e fluidez.",
+      "price": 1999.99,
+      "discountPrice": 2499.99,
+      "cover": "https://down-br.img.susercontent.com/file/6bce2e6c04d581158e1bc077e7931dbe",
+      "category": "smartphones"
+    },
+    {
+      "id": 16,
+      "title": "Headset Gamer HyperX Cloud II",
+      "description": "O Headset Gamer HyperX Cloud II proporciona uma experiência de áudio imersiva com som surround 7.1 virtual, drivers de 53mm e design confortável. Ideal para longas sessões de jogos.",
+      "price": 599.99,
+      "discountPrice": 699.99,
+      "cover": "https://images.kabum.com.br/produtos/fotos/85162/85162_index_gg.jpg",
+      "category": "fones"
+    },
+    {
+      "id": 17,
+      "title": "Mouse Gamer Razer DeathAdder V2",
+      "description": "O Mouse Gamer Razer DeathAdder V2 oferece precisão e desempenho com sensor óptico de 20.000 DPI, switches ópticos e design ergonômico para jogadores.",
+      "price": 299.99,
+      "discountPrice": 349.99,
+      "cover": "https://static.razer.com/assets/images/1240x500/da-v2-hero-desktop.jpg",
+      "category": "mouses"
+    },
+    {
+      "id": 18,
+      "title": "Impressora Multifuncional HP DeskJet Ink Advantage 2776",
+      "description": "A Impressora Multifuncional HP DeskJet Ink Advantage 2776 é ideal para uso doméstico, oferecendo impressão, digitalização e cópia com qualidade e economia.",
+      "price": 399.99,
+      "discountPrice": 449.99,
+      "cover": "https://images.kabum.com.br/produtos/fotos/113135/113135_index_gg.jpg",
+      "category": "impressoras"
+    },
+    {
+      "id": 19,
+      "title": "Tablet Apple iPad 9ª Geração 10.2",
+      "description": "O Tablet Apple iPad 9ª Geração 10.2 oferece desempenho poderoso com o chip A13 Bionic, tela Retina e compatibilidade com Apple Pencil e Smart Keyboard.",
+      "price": 2999.99,
+      "discountPrice": 3299.99,
+      "cover": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2021-hero-space-wifi-select?wid=940&hei=1112&fmt=png-alpha&.v=1629918338000",
+      "category": "tablets"
+    },
+    {
+      "id": 20,
+      "title": "Caixa de Som Bluetooth JBL Charge 4",
+      "description": "A Caixa de Som Bluetooth JBL Charge 4 oferece som potente com graves profundos, bateria de longa duração e resistência à água, ideal para qualquer ocasião.",
+      "price": 699.99,
+      "discountPrice": 799.99,
+      "cover": "https://images.kabum.com.br/produtos/fotos/102010/102010_1548775075_g.jpg",
+      "category": "audio"
+    }
+  ]
+}
