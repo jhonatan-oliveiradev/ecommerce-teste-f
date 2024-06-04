@@ -1,4 +1,3 @@
-// components/CategoryItem.tsx
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { CATEGORY_ICON } from "../constants/category-icon";

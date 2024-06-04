@@ -58,8 +58,8 @@ const HeroBanner = () => {
             />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="left-1 opacity-50 md:left-4" />
-        <CarouselNext className="right-1 opacity-50 md:right-4" />
+        <CarouselPrevious className="hidden opacity-50 md:left-4 md:flex" />
+        <CarouselNext className="hidden opacity-50 md:right-4 md:flex" />
       </Carousel>
     </section>
   );
