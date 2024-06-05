@@ -4,11 +4,12 @@ import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Button } from "./ui/button";
-import { ShoppingCartIcon } from "lucide-react";
+import { MenuIcon, ShoppingCartIcon } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/components/ui/use-toast";
 import { api } from "@/services/api";
 import { CartContext } from "@/contexts/cart-context";
+import SideMenu from "./side-menu";
 
 export interface ProductsProps {
   id: number;
@@ -29,6 +30,7 @@ const Products = ({ category, searchQuery }: ProductsComponentProps) => {
   const { addItemToCart } = useContext(CartContext);
   const [products, setProducts] = useState<ProductsProps[]>([]);
   const [loading, setLoading] = useState(false);
+  const [categories, setCategories] = useState<any[]>([]);
 
   const { toast } = useToast();
 
@@ -51,7 +53,17 @@ const Products = ({ category, searchQuery }: ProductsComponentProps) => {
       setLoading(false);
     }
 
+    async function getCategories() {
+      try {
+        const response = await api.get("/categories");
+        setCategories(response.data);
+      } catch (error) {
+        console.error("Failed to fetch categories", error);
+      }
+    }
+
     getProducts();
+    getCategories();
   }, [category, searchQuery]);
 
   const handleAddItemToCart = (product: ProductsProps) => {
@@ -64,9 +76,12 @@ const Products = ({ category, searchQuery }: ProductsComponentProps) => {
 
   return (
     <section className="mx-auto h-auto w-full max-w-7xl">
-      <h2 className="my-4 text-left text-2xl font-bold">
-        {category ? `Produtos na categoria ${category}` : "Produtos em alta"}
-      </h2>
+      <div className="flex items-center justify-between">
+        <h2 className="my-4 text-left text-2xl font-bold">
+          {category ? `Produtos na categoria ${category}` : "Produtos em alta"}
+        </h2>
+        <SideMenu categories={categories} />
+      </div>
 
       {loading && (
         <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
