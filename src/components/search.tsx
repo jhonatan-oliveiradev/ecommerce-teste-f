@@ -3,17 +3,23 @@
 import { SearchIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const Search = () => {
+interface SearchProps {
+  onSearch: (query: string) => void;
+}
+
+const Search = ({ onSearch }: SearchProps) => {
   const [query, setQuery] = useState("");
-  const router = useRouter();
 
   const handleSearch = () => {
     if (query.trim() !== "") {
-      router.push(`/search?q=${query}`);
+      onSearch(query);
     }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
   };
 
   return (
@@ -21,7 +27,7 @@ const Search = () => {
       <div className="flex gap-2">
         <Input
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={handleChange}
           placeholder="Busque um produto"
           className="border-none bg-background outline-none hover:ring-2 hover:ring-secondary focus-visible:ring-2 focus-visible:ring-primary"
         />

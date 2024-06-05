@@ -1,27 +1,24 @@
 "use client";
 
-import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import Products from "@/components/products";
 import Search from "@/components/search";
 
 const SearchPage = () => {
-  // const searchParams = useSearchParams();
-  // const query = searchParams.get("q");
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    router.push(`/search?q=${query}`);
+  };
 
   return (
-    <Suspense
-      fallback={
-        <div className="flex h-screen items-center justify-center">
-          <div className="h-32 w-32 animate-spin rounded-full border-b-2 border-t-2 border-gray-900"></div>
-        </div>
-      }
-    >
-      <section className="mx-auto h-auto w-full max-w-7xl">
-        <Search />
-        {/* {query && <Products searchQuery={query} />} */}
-      </section>
-    </Suspense>
+    <section className="mx-auto h-auto w-full max-w-7xl">
+      <Search onSearch={handleSearch} />
+      <Products searchQuery={searchQuery} />
+    </section>
   );
 };
 
