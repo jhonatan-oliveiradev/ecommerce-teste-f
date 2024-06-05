@@ -1,3 +1,5 @@
+"use client";
+
 import Search from "@/components/search";
 
 const SearchWrapper = () => {

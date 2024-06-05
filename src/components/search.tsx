@@ -13,9 +13,7 @@ const Search = ({ onSearch }: SearchProps) => {
   const [query, setQuery] = useState("");
 
   const handleSearch = () => {
-    if (query.trim() !== "") {
-      onSearch(query);
-    }
+    onSearch(query);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
