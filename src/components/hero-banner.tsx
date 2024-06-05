@@ -9,12 +9,10 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import Search from "./search";
 
 const HeroBanner = () => {
   return (
     <section className="w-full">
-      <Search onSearch={() => {}} />
       <Carousel
         opts={{
           loop: true,
