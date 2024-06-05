@@ -6,8 +6,8 @@ import Products from "@/components/products";
 import Search from "@/components/search";
 
 const SearchPage = () => {
-  const searchParams = useSearchParams();
-  const query = searchParams.get("q");
+  // const searchParams = useSearchParams();
+  // const query = searchParams.get("q");
 
   return (
     <Suspense
@@ -19,7 +19,7 @@ const SearchPage = () => {
     >
       <section className="mx-auto h-auto w-full max-w-7xl">
         <Search />
-        {query && <Products searchQuery={query} />}
+        {/* {query && <Products searchQuery={query} />} */}
       </section>
     </Suspense>
   );
