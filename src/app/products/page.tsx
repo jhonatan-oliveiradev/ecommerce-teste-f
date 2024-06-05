@@ -1,11 +1,11 @@
 import Footer from "@/components/footer";
 import Products from "@/components/products";
-import Search from "@/components/search";
+import SearchWrapper from "../search/components/search-wrapper";
 
 const ProductPage = () => {
   return (
     <>
-      <Search />
+      <SearchWrapper />
       <Products />
       <Footer />
     </>
