@@ -11,10 +11,24 @@ import {
 import { Input } from "@/components/ui/input";
 import { TruckIcon } from "lucide-react";
 import { CartContext } from "@/contexts/cart-context";
+import { useToast } from "@/components/ui/use-toast";
+import { useRouter } from "next/navigation";
 
 const ProductResume = () => {
-  const { total, getTotalItems } = useContext(CartContext);
+  const { push } = useRouter();
+  const { total, getTotalItems, clearCart } = useContext(CartContext);
   const totalItems = getTotalItems();
+  const { toast } = useToast();
+
+  const handleFinishOrder = () => {
+    toast({
+      title: "Pedido finalizado",
+      description: "Seu pedido foi finalizado com sucesso",
+    }),
+      clearCart();
+
+    push("/checkout");
+  };
 
   return (
     <Card className="my-6 flex flex-col items-start justify-center">
@@ -44,7 +58,9 @@ const ProductResume = () => {
             Aplicar
           </Button>
         </div>
-        <Button className="w-full">Finalizar pedido</Button>
+        <Button className="w-full" onClick={handleFinishOrder}>
+          Finalizar pedido
+        </Button>
       </CardFooter>
     </Card>
   );

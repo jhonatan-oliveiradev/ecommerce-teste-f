@@ -1,7 +1,7 @@
 "use client";
 
 import { ProductsProps } from "@/components/products";
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 
 interface CartContextData {
   cart: CartProps[];
@@ -10,6 +10,7 @@ interface CartContextData {
   removeItemFromCart: (product: CartProps) => void;
   total: string;
   getTotalItems: () => number;
+  clearCart: () => void;
 }
 
 export interface CartProps {
@@ -30,9 +31,30 @@ interface CartProviderProps {
 
 export const CartContext = createContext({} as CartContextData);
 
+const localStorageKey = "@zionStore:cart";
+
 const CartProvider = ({ children }: CartProviderProps) => {
-  const [cart, setCart] = useState<CartProps[]>([]);
   const [total, setTotal] = useState("");
+  const [cart, setCart] = useState<CartProps[]>(() => {
+    if (typeof window !== "undefined") {
+      const value = localStorage.getItem(localStorageKey);
+      if (value) return JSON.parse(value);
+    }
+    return [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem(localStorageKey, JSON.stringify(cart));
+  }, [cart]);
+
+  useEffect(() => {
+    totalResultCart(cart);
+  }, [cart]);
+
+  function clearCart() {
+    setCart([]);
+    setTotal("");
+  }
 
   const addItemToCart = (newItem: ProductsProps) => {
     const itemIndex = cart.findIndex((item) => item.id === newItem.id);
@@ -100,6 +122,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
         removeItemFromCart,
         total,
         getTotalItems,
+        clearCart,
       }}
     >
       {children}
