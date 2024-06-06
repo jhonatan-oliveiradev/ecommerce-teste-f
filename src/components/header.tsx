@@ -6,6 +6,7 @@ import { FanIcon, ShoppingCartIcon } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import Customer from "./customer";
 import { CartContext } from "@/contexts/cart-context";
+import { SignedIn, SignedOut, SignInButton } from "@clerk/nextjs";
 
 const Header = () => {
   const { cartAmount } = useContext(CartContext);
@@ -44,7 +45,18 @@ const Header = () => {
         <div className="flex items-center justify-center gap-4">
           <div className="flex items-center gap-2">
             <Customer />
-            <p className="hidden text-xs text-primary md:flex">Bem-vindo(a)!</p>
+            <SignedIn>
+              <p className="hidden text-xs text-primary md:flex">
+                Bem-vindo(a)!
+              </p>
+            </SignedIn>
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="hidden text-xs text-primary md:flex">
+                  Faça login
+                </button>
+              </SignInButton>
+            </SignedOut>
           </div>
 
           <Link className="relative" href="/cart">

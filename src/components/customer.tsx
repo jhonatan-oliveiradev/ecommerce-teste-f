@@ -1,11 +1,23 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 const Customer = () => {
   return (
-    <Avatar className="h-8 w-8 border-2 border-primary">
-      <AvatarImage src="https://github.com/shadcn.png" />
-      <AvatarFallback>CN</AvatarFallback>
-    </Avatar>
+    <div className="flex items-center rounded-full border-2 border-primary">
+      <SignedOut>
+        <div className="hidden">
+          <SignInButton />
+        </div>
+      </SignedOut>
+      <SignedIn>
+        <UserButton
+          appearance={{
+            baseTheme: dark,
+          }}
+          afterSignOutUrl="/"
+        />
+      </SignedIn>
+    </div>
   );
 };
 
