@@ -27,7 +27,7 @@ const ProductResume = () => {
     }),
       clearCart();
 
-    push("/checkout");
+    push("/");
   };
 
   return (
