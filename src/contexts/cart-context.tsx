@@ -1,12 +1,12 @@
 "use client";
 
-import { ProductsProps } from "@/components/products";
+import { Product } from "@/components/products";
 import { createContext, ReactNode, useEffect, useState } from "react";
 
 interface CartContextData {
   cart: CartProps[];
   cartAmount: number;
-  addItemToCart: (newItem: ProductsProps) => void;
+  addItemToCart: (newItem: Product) => void;
   removeItemFromCart: (product: CartProps) => void;
   total: string;
   getTotalItems: () => number;
@@ -56,7 +56,7 @@ const CartProvider = ({ children }: CartProviderProps) => {
     setTotal("");
   }
 
-  const addItemToCart = (newItem: ProductsProps) => {
+  const addItemToCart = (newItem: Product) => {
     const itemIndex = cart.findIndex((item) => item.id === newItem.id);
 
     if (itemIndex !== -1) {

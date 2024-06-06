@@ -68,7 +68,7 @@ const Products = ({ category, searchQuery }: ProductsProps) => {
     getCategories();
   }, [category, searchQuery]);
 
-  const handleAddItemToCart = (product: ProductsProps) => {
+  const handleAddItemToCart = (product: Product) => {
     addItemToCart(product);
     toast({
       title: "Produto adicionado ao carrinho!",
