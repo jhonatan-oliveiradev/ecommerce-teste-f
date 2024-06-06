@@ -122,7 +122,7 @@ const ProductPage = () => {
           </div>
           <div className="my-4">
             <span>Descrição:</span>
-            <p className="">{product.description}</p>
+            <p>{product.description}</p>
           </div>
           <span className="mb-4 capitalize text-muted-foreground">
             Categoria: {product.category}
