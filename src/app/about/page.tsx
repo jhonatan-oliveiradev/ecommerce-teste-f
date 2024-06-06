@@ -80,13 +80,15 @@ const AboutPage = () => {
         />
       </div>
 
-      <div className="my-6 flex flex-col items-center justify-center gap-2">
+      <div className="my-6 flex flex-col items-center justify-center gap-2 text-center">
         <h3 className="font-semibold">Junte-se à Nossa Comunidade</h3>
         <p>
           Mais do que uma loja, a Zion Store é uma comunidade de apaixonados por
-          tecnologia. Siga-nos nas redes sociais para ficar por dentro das
-          novidades, promoções exclusivas e dicas incríveis que vão transformar
-          a forma como você interage com o mundo digital.
+          tecnologia.
+          <br />
+          Siga-nos nas redes sociais para ficar por dentro das novidades,
+          promoções exclusivas e dicas incríveis que vão transformar a forma
+          como você interage com o mundo digital.
         </p>
         <p className="text-center font-semibold">
           Agradecemos por escolher a Zion Store. Aqui, a tecnologia é feita para

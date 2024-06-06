@@ -12,7 +12,7 @@ import { CartContext } from "@/contexts/cart-context";
 import SideMenu from "./side-menu";
 import Link from "next/link";
 
-export interface ProductsProps {
+export interface Product {
   id: number;
   title: string;
   description: string;
@@ -22,14 +22,15 @@ export interface ProductsProps {
   category: string;
 }
 
-interface ProductsComponentProps {
+interface ProductsProps {
   category?: string;
   searchQuery?: string;
+  products?: Product[];
 }
 
-const Products = ({ category, searchQuery }: ProductsComponentProps) => {
+const Products = ({ category, searchQuery }: ProductsProps) => {
   const { addItemToCart } = useContext(CartContext);
-  const [products, setProducts] = useState<ProductsProps[]>([]);
+  const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState<any[]>([]);
 

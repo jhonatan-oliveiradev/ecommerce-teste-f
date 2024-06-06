@@ -11,29 +11,42 @@ const Recommended = () => {
         Separamos algumas ofertas que combinam com o que você escolheu.
       </p>
 
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-        <Link href="products">
+      <div className="flex flex-col">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
+          <Link href="products">
+            <Image
+              src="/banner-mouses.png"
+              alt="até 55% de desconto em mouses"
+              height={0}
+              width={0}
+              className="h-auto w-full max-w-[420px] object-contain"
+              sizes="100vw"
+              quality={100}
+            />
+          </Link>
+          <Link href="products">
+            <Image
+              src="/banner-fones.png"
+              alt="até 20% de desconto em fones"
+              height={0}
+              width={0}
+              className="h-auto w-full max-w-[420px] object-contain"
+              sizes="100vw"
+              quality={100}
+            />
+          </Link>
+        </div>
+        <div className="mb-4 mt-2 flex w-full">
           <Image
-            src="/banner-mouses.png"
+            src="/banner-frete-gratis.png"
             alt="até 55% de desconto em mouses"
             height={0}
             width={0}
-            className="h-auto w-full max-w-[420px] object-contain"
+            className="h-auto w-full max-w-[864px] object-contain"
             sizes="100vw"
             quality={100}
           />
-        </Link>
-        <Link href="products">
-          <Image
-            src="/banner-fones.png"
-            alt="até 20% de desconto em fones"
-            height={0}
-            width={0}
-            className="h-auto w-full max-w-[420px] object-contain"
-            sizes="100vw"
-            quality={100}
-          />
-        </Link>
+        </div>
       </div>
     </div>
   );

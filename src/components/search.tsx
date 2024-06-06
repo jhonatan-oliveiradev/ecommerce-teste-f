@@ -20,12 +20,19 @@ const Search = ({ onSearch }: SearchProps) => {
     setQuery(e.target.value);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   return (
     <div className="flex h-16 w-full items-center justify-center bg-secondary/50">
       <div className="flex gap-2">
         <Input
           value={query}
           onChange={handleChange}
+          onKeyDown={handleKeyDown}
           placeholder="Busque um produto"
           className="border-none bg-background outline-none hover:ring-2 hover:ring-secondary focus-visible:ring-2 focus-visible:ring-primary"
         />
