@@ -8,15 +8,16 @@ import { MinusIcon, PlusIcon, Trash2Icon } from "lucide-react";
 import ProductResume from "./components/product-resume";
 import { CartContext } from "@/contexts/cart-context";
 import Link from "next/link";
+import Recommended from "./components/recommended";
 
 const CartPage = () => {
   const { cart, addItemToCart, removeItemFromCart } = useContext(CartContext);
 
   return (
     <section className="mx-auto w-full max-w-7xl">
-      <h2 className="my-4 text-left text-2xl font-bold">Meu carrinho</h2>
+      <h2 className="mt-4 text-left text-2xl font-bold">Meu carrinho</h2>
       <p className="mb-4 text-xs text-muted-foreground">
-        Deseja ver produtos semelhantes?
+        Aqui está um resumo das suas compras.
       </p>
 
       {cart.length === 0 && (
@@ -48,7 +49,12 @@ const CartPage = () => {
             quality={100}
           />
 
-          <span className="font-bold">R$ {item.price}</span>
+          <span className="font-bold">
+            {item.price.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </span>
           <div className="flex items-center gap-4">
             {item.amount - 1 ? (
               <Button
@@ -87,9 +93,8 @@ const CartPage = () => {
       ))}
 
       {cart.length !== 0 && (
-        <div className="flex flex-col-reverse items-start justify-between md:flex-row lg:items-end">
-          <div className="flex-1"></div>
-
+        <div className="flex flex-col-reverse items-start justify-between gap-2 md:flex-row">
+          <Recommended />
           <ProductResume />
         </div>
       )}

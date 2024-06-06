@@ -1,6 +1,8 @@
 import Footer from "@/components/footer";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import Link from "next/link";
 
 const CheckoutPage = () => {
   return (
@@ -9,6 +11,10 @@ const CheckoutPage = () => {
       <p className="mb-4 text-sm text-muted-foreground">
         Obrigado por comprar conosco!
       </p>
+
+      <Link href="/">
+        <Button>Explorar mais ofertas!</Button>
+      </Link>
 
       <div className="flex flex-col gap-4">
         <h2 className="mt-4 text-left text-2xl font-bold">
