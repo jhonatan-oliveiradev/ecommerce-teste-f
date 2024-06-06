@@ -4,12 +4,13 @@ import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Button } from "./ui/button";
-import { MenuIcon, ShoppingCartIcon } from "lucide-react";
+import { ShoppingCartIcon } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/components/ui/use-toast";
 import { api } from "@/services/api";
 import { CartContext } from "@/contexts/cart-context";
 import SideMenu from "./side-menu";
+import Link from "next/link";
 
 export interface ProductsProps {
   id: number;
@@ -108,25 +109,34 @@ const Products = ({ category, searchQuery }: ProductsComponentProps) => {
             <div key={product.id} className="w-full">
               <Card className="h-auto">
                 <CardContent>
-                  <Image
-                    src={product.cover}
-                    alt={product.title}
-                    height={0}
-                    width={0}
-                    className="h-[200px] w-full object-contain py-6"
-                    sizes="100vw"
-                    quality={100}
-                  />
-                  <p className="line-clamp-2">{product.title}</p>
+                  <Link href={`/product/${product.id}`}>
+                    <Image
+                      src={product.cover}
+                      alt={product.title}
+                      height={0}
+                      width={0}
+                      className="h-[200px] w-full object-contain py-6"
+                      sizes="100vw"
+                      quality={100}
+                    />
+                    <p className="line-clamp-2">{product.title}</p>
+                  </Link>
                 </CardContent>
                 <CardFooter className="flex items-center justify-between">
-                  <span className="font-bold">
-                    R${" "}
-                    {product.price.toLocaleString("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                    })}
-                  </span>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs text-muted-foreground line-through">
+                      {product.discountPrice.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })}
+                    </span>
+                    <span className="font-bold">
+                      {product.price.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL",
+                      })}
+                    </span>
+                  </div>
                   <Button size="icon">
                     <ShoppingCartIcon
                       onClick={() => handleAddItemToCart(product)}
