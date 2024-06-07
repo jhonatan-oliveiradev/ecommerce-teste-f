@@ -35,6 +35,7 @@ const ProductResume = () => {
     toast({
       title: "Pedido finalizado",
       description: "Seu pedido foi finalizado com sucesso",
+      duration: 1000,
     }),
       clearCart();
 
@@ -110,7 +111,6 @@ const ProductResume = () => {
         <div>
           <span>Total:</span> <span className="font-bold">{total}</span>
         </div>
-        
       </CardContent>
       <CardFooter className="flex flex-col">
         <div className="mb-4 flex gap-2">

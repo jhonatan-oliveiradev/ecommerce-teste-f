@@ -11,6 +11,8 @@ import { api } from "@/services/api";
 import { CartContext } from "@/contexts/cart-context";
 import SideMenu from "./side-menu";
 import Link from "next/link";
+import { CustomTitle } from "./custom-title";
+import { title } from "process";
 
 export interface Product {
   id: number;
@@ -73,15 +75,26 @@ const Products = ({ category, searchQuery }: ProductsProps) => {
     toast({
       title: "Produto adicionado ao carrinho!",
       description: "Pode continuar suas compras",
+      duration: 1000,
     });
   };
 
   return (
     <section className="mx-auto h-auto w-full max-w-7xl">
       <div className="flex items-center justify-between">
-        <h2 className="my-4 text-left text-2xl font-bold">
-          {category ? `Produtos na categoria ${category}` : "Produtos em alta"}
-        </h2>
+        <div className="mt-4 flex flex-col">
+          <h2 className="text-left text-2xl font-bold">
+            {category ? (
+              `Produtos na categoria ${category}`
+            ) : (
+              <CustomTitle title="Produtos populares" />
+            )}
+          </h2>
+          <p className="mb-4 text-xs text-muted-foreground">
+            Explore livremente ou utilize o menu lateral para navegar por
+            categoria.
+          </p>
+        </div>
         <SideMenu categories={categories} />
       </div>
 
