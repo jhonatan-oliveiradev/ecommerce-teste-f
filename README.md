@@ -23,7 +23,6 @@
 <div align="center">
 
   ![Cover](./public/preview.png)
-  ![Mobile](./public/preview-mobile.png)
 
 </div>
 
